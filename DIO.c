@@ -1,14 +1,7 @@
-/*
- * DIO.c
- *
- * Created: 10/5/2023 1:21:20 PM
- *  Author: eman
- */ 
 #include <avr/io.h>
 #include "DIO.h"
 #include "std_macros.h"
 
-//First function (set direction)
 
 void DIO_set_pin_direction (char port, char pin, char direction)
 {
@@ -63,7 +56,6 @@ void DIO_set_pin_direction (char port, char pin, char direction)
 	}
 }
 
-//Second function (Write)
 
 void DIO_write_pin (char port, char pin, char outputvalue)
 
@@ -119,7 +111,7 @@ void DIO_write_pin (char port, char pin, char outputvalue)
 	}
 }
 
-//Third function (Write)
+
 void DIO_toggle_pin (char port, char pin)
 {
 	switch (port)
